@@ -1,0 +1,62 @@
+
+.titleBarchart{
+
+    width: 92%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    top: 80px;
+    //border: solid red;
+
+    &__legend{
+
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        //border: solid blue;
+
+        &--Item{
+
+            color: $colorLegendeBarChart;
+            //border: solid yellow;
+
+            .icon{
+
+                display: inline-block;
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+                margin-right: 10px;
+                background-color: black;
+
+            }
+            .caloriesIcon{
+
+                background-color: $redColor;
+            }
+        }
+    }
+
+}
+
+.BarChartComponent{
+
+    
+    height: 350px;
+    display: flex;
+    align-items: end;
+    padding-top: 70px;
+    background-color: $greyColor;
+   // border: solid blue;
+
+   
+    .barRadius{
+
+        border: solid blue;
+    }
+   
+}

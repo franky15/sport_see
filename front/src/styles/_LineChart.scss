@@ -1,0 +1,28 @@
+.LineChart{
+
+    width: 31%;
+    height: 350px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    background-color: $redColor;
+    margin-top: 30px;
+    border-radius: 5px;
+    position: 'relative';
+    
+   // border: solid blue;
+
+
+    .container2{
+        width: 90%;
+        margin: auto;
+        //height: 110%;
+        height: 40px;
+        position: relative;
+        //top: -320px;
+        top: -30px;
+       // background-color: $redColor;
+        //border: solid yellow;
+    }
+};
+

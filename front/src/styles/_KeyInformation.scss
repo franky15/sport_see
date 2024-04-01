@@ -1,0 +1,39 @@
+.KeyInformation{
+
+    //width: ;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //border: solid red;
+
+    &__item{
+
+        height: 20%;
+        display: flex;
+        align-items: center;
+        border-radius: $borderRadius;
+        background-color: $greyColor;
+       // padding-left: 50px;
+       
+       //border: solid yellow;
+
+       &--icon{
+
+        width: 40%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        //border: solid red;
+       }
+       &--calories{
+            
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            //border: solid blue;
+       }
+    }
+}

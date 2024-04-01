@@ -1,0 +1,72 @@
+.Profil{
+
+    width: 95%;
+   
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    //border: solid yellow;
+
+    /****************** style du composant UserWelcome ************************/
+
+    .UserWelcome{
+
+        
+       
+        //border: solid red;
+
+        &__titre{
+                
+            font-size: 48px;
+            margin-bottom: 10px;
+
+            span{
+                color: $redColor;
+            }
+        }
+    }
+
+    &__containerDiagram{
+
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        //border: solid red;
+
+       
+    }
+
+    &__container{
+
+       // width: 20%;
+        //height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       // border: solid red;
+
+        .containerDiagramme{
+            
+            width: 70%;
+            
+            //border: solid red;
+
+            .Profil__containerDiagram{
+
+                width: 100%;
+                //border: solid blue;
+            }
+        }
+
+        .containerAlimentation{
+           
+            width: 28%;
+            //height: 100%;
+           // border: solid blue;
+        }
+        
+    }
+
+
+}

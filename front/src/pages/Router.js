@@ -6,7 +6,7 @@ import { Home, Community, Profil, Reglage } from './index';
 
 import Layout from './Layout';
 import Error from '../_Utils/Error';
-
+//import Error from '../_Utils/Error';
 
 const Router = () => {
     return (

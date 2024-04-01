@@ -1,0 +1,52 @@
+.HeaderHozontal{
+
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $backgroundColorHeader;
+   // border: solid red;
+
+   a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    }
+
+    &__logo{
+
+        width: 10%;
+        margin-left: 10px;
+        background-color: $backgroundColorHeader;
+        border: none;
+
+        img{
+            width: 178px;
+            height: 60px;
+            cursor: pointer;
+            
+        }
+    }
+
+    nav{
+
+        width: 90%;
+        //border: solid red;
+
+        ul{
+
+            display: flex;
+            justify-content: space-around;
+            padding-left: 0px;
+            list-style-type: none;
+            
+            
+            
+            li{
+                color: white;
+                //cursor: pointer;
+              
+            }
+        }
+    }
+}

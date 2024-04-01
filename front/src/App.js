@@ -5,14 +5,20 @@ import './App.css';
 //importation du router
 import Router from './pages/Router';
 
+//importation du context
+import { ContextDatasFunction } from './_Utils/contexts/ContextDatas';
+
 function App() {
   return (
-    <BrowserRouter>
-     <Routes>
-        <Route path='/*' element={<Router />} />
-      
-     </Routes>
-    </BrowserRouter>
+
+    <ContextDatasFunction>
+      <BrowserRouter>
+      <Routes>
+          <Route path='/*' element={<Router />} />
+        
+      </Routes>
+      </BrowserRouter>
+    </ContextDatasFunction>
   );
 }
 

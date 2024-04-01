@@ -37,7 +37,7 @@ let getKeyDataUser = (id) =>{
 }
 
 //export des fonctions
-export default {
+export const UserServices ={
     getUser,
     getActivityUser,
     getAverageSessionUser,

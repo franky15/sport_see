@@ -1,0 +1,15 @@
+.RadarChartComponent{
+
+    width: 32%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgroundColorRadarChart;
+    margin-top: 30px;
+    border-radius: 5px;
+    
+    // padding-left: 10px;
+    // padding-right: 10px;
+    //border: solid red;
+}
