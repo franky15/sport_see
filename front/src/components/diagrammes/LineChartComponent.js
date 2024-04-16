@@ -49,7 +49,7 @@ const handleMouseMove = (e) => {
   const x = e.clientX - parentRect.left;
   const y = e.clientY - parentRect.top;
 
-  // Limiter la plage de déplacement à l'intérieur du parent
+  // Limitation la plage de déplacement à l'intérieur du parent
   const minX = 0;
   const maxX = parentRect.width - 100 ; //100 La largeur de container1 est de 100px
   const clampedX = Math.min(Math.max(x, minX), maxX);

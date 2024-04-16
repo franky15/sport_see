@@ -39,6 +39,7 @@ const ContextDatasFunction = ({children}) => {
 
                 const response = res.data.data
 
+                console.log("**** utilisateur récupéré", response)
             
                 setDataUserContext(response)
             
@@ -65,7 +66,7 @@ const ContextDatasFunction = ({children}) => {
             })
             .catch( function(err){
 
-                console.log( "**** activité non récupéré")
+                console.log( "**** activité non récupérée")
                 console.log( err)
 
             })
