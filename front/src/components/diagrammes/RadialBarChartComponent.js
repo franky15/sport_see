@@ -5,25 +5,30 @@ import { useContextDatas } from "../../_Utils/contexts/ContextDatas";
 
 const RadialBarChartComponent = () => {
 
-    const { dataUserContext } = useContextDatas();
+  
+    const { completionUserContext } = useContextDatas();
+
+    //console.log("completionUserContext", completionUserContext)
 
     const [data, setData] = useState({
         todayScore: 0,
     });
 
-   
+  // console.log("completionUserContext", completionUserContext)
+
     useEffect(() => {
 
-        if (dataUserContext.todayScore && dataUserContext.todayScore !== 0) {
+
+        if (completionUserContext && completionUserContext !== 0) {
 
             setData( {
-                 todayScore: dataUserContext.todayScore * 100  //rajout d'une valeur max au score pour avoir un pourcentage
+                 todayScore: completionUserContext  //rajout d'une valeur max au score pour avoir un pourcentage
                  
             });
 
         }
         
-    }, [dataUserContext]);
+    }, [completionUserContext]);
 
     //donnée fictive pour le centre du diagramme
     const data01 = [
@@ -51,6 +56,8 @@ const RadialBarChartComponent = () => {
     }
     dataMax()
    
+    //console.log("data", data)
+
     return (
         <div className="RadialBarChartComponent">
 

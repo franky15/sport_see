@@ -11,11 +11,13 @@ const LineChartComponent = () => {
 
   useEffect(() => {
 
-    if (averageSessionUserContext.sessions && averageSessionUserContext.sessions.length > 0) {
-      setData(averageSessionUserContext.sessions);
+    if (averageSessionUserContext && averageSessionUserContext.length > 0) {
+      setData(averageSessionUserContext);
     }
     
   }, [averageSessionUserContext]);
+
+  //console.log("***averageSessionUserContext", averageSessionUserContext)
 
   const CustomTooltip = ({ active, payload, label }) => {
 
@@ -105,7 +107,7 @@ const handleMouseMove = (e) => {
             <Tooltip content={<CustomTooltip />} 
 
               cursor={{
-                  stroke: "none",
+                  stroke: "none",  //ligne verticale
                   //strokeWidth: "25%",//32,
                   
                 }}
@@ -117,20 +119,14 @@ const handleMouseMove = (e) => {
       </ResponsiveContainer>
 
       <div className="container2">
-              <ResponsiveContainer width="100%" height="100%">
-                <LineChart width={300} height={100} data={data}>
-                  
-                  <XAxis  axisLine={false} dataKey="day" tickLine={false} style={{opacity: 0.5, fill: "#ffffff"}} />
-                  {/*<Line type="monotone" dataKey="sessionLength" stroke="#8884d8" strokeWidth={2} dot={false} />*/}
-                  
-                  <Tooltip content={<CustomTooltip />} cursor={{
-                      stroke: "rgba(0, 0, 0, 0.1)",
-                      strokeWidth: "25%",
-                      
-                    }}/>
-                </LineChart>
-              </ResponsiveContainer>
-          </div>
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart width={300} height={100} data={data}>
+              
+              <XAxis  axisLine={false} dataKey="day" tickLine={false} style={{opacity: 0.5, fill: "#ffffff"}} />
+              
+            </LineChart>
+          </ResponsiveContainer>
+      </div>
        
 
     </div>

@@ -1,4 +1,7 @@
 export const USER_DATA ={
+
+   
+    
     "data": {
         "id": 12,
         "userInfos": {
@@ -59,8 +62,10 @@ export const USER_ACTIVITY = {
     }
 };
 
-export const USER_AVERAGE_SESSIONS = {
-    "data": {
+export const USER_COMPLETION = {
+
+    todayScore: 12
+    /*"data": {
         "userId": 12,
         "sessions": [
             {
@@ -92,7 +97,7 @@ export const USER_AVERAGE_SESSIONS = {
                 "sessionLength": 60
             }
         ]
-    }
+    }*/
 };
 
 export const USER_PERFORMANCE = {

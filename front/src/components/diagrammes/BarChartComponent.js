@@ -15,11 +15,19 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+import { USER_DATA, USER_ACTIVITY, USER_AVERAGE_SESSIONS, USER_PERFORMANCE } from "../../mockDatas/MockData";
+
 const BarChartComponent = () => {
   const { activityUserContext } = useContextDatas();
 
   //gestion du sate de l'utilisateur
   const [data, setData] = useState([]);
+
+  //console.log("USER_DATA", USER_DATA);
+
+  let list = [];
+
+  //setData(USER_DATA) 
 
   useEffect(() => {
     //récupération des données de l'utilisateur
@@ -35,12 +43,14 @@ const BarChartComponent = () => {
 
   }, [activityUserContext]);
 
+  //console.log("data Barchart", data )
     
   //fonction de customisation du tooltip
     const CustomTooltip = ({ active, payload, label }) => {
 
         if (active && payload && payload.length) {
 
+          //console.log("payload", payload)
             return (
                 <div className="custom-tooltip" style={{ backgroundColor: "#ff0000", height: 100, width: 70,  color: "white", fontSize: 12, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }} >
                     
@@ -98,8 +108,8 @@ const BarChartComponent = () => {
                     <CartesianGrid strokeDasharray="3 3" vertical={false} />
                     <XAxis  tickLine={{ stroke: "#ffffff" }}  padding={{ left: -65, right: -66 }}  dataKey={ (value) =>{
 
-                        const day = value.day.split("-")[2];  //on récupère le jour qui est le 3ème élément du tableau
-                        return day.startsWith("0") ? day[1] : day; //si le jour commence par 0, on supprime le 0 et on retourne le jour 
+                        const day = value.day
+                        return day 
                     
                     }} />
                     <YAxis  axisLine={false}   tickMargin={30} orientation="right"  tickLine={{ stroke: "#ffffff" }}  />

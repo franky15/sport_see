@@ -12,6 +12,8 @@ const KeyInformation = () => {
 
     const { dataUserContext } = useContextDatas();
 
+    //console.log("dataUserContext", dataUserContext)
+
     const [data, setData] = useState({});
 
    
