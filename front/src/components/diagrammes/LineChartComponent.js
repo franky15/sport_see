@@ -7,6 +7,9 @@ import { useContextDatas } from "../../_Utils/contexts/ContextDatas";
 const LineChartComponent = () => {
 
   const { averageSessionUserContext } = useContextDatas();
+
+  //console.log("***averageSessionUserContext", averageSessionUserContext)
+
   const [data, setData] = useState([]);
 
   useEffect(() => {

@@ -17,6 +17,7 @@ const Router = () => {
                 <Route path='community' element={<Community />} />
                 <Route path='profil' element={<Profil />} />
                 <Route path='reglage' element={<Reglage />} />
+                <Route path='error' element= { <Error/> }/>
                 <Route path='*' element= { <Error/> }/>
             </Route>
         </Routes>

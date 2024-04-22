@@ -11,14 +11,16 @@ import { ContextDatasFunction } from './_Utils/contexts/ContextDatas';
 function App() {
   return (
 
-    <ContextDatasFunction>
+   
       <BrowserRouter>
-      <Routes>
-          <Route path='/*' element={<Router />} />
-        
-      </Routes>
+       <ContextDatasFunction>
+        <Routes>
+            <Route path='/*' element={<Router />} />
+          
+        </Routes>
+       </ContextDatasFunction>
       </BrowserRouter>
-    </ContextDatasFunction>
+   
   );
 }
 

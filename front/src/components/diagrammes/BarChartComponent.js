@@ -15,15 +15,16 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-import { USER_DATA, USER_ACTIVITY, USER_AVERAGE_SESSIONS, USER_PERFORMANCE } from "../../mockDatas/MockData";
+
 
 const BarChartComponent = () => {
   const { activityUserContext } = useContextDatas();
 
+  //console.log("***activityUserContext", activityUserContext)
+
   //gestion du sate de l'utilisateur
   const [data, setData] = useState([]);
 
-  //console.log("USER_DATA", USER_DATA);
 
   let list = [];
 
@@ -31,11 +32,11 @@ const BarChartComponent = () => {
 
   useEffect(() => {
     //récupération des données de l'utilisateur
-    if (activityUserContext && activityUserContext.sessions) {
+    if (activityUserContext && activityUserContext.length > 0) { 
       //console.log("***activityUserContext.sessions");
       //console.log(activityUserContext.sessions);
 
-      setData(activityUserContext.sessions);
+      setData(activityUserContext);
 
     }
 

@@ -15,10 +15,10 @@ const RadarChartComponent = () => {
 
     useEffect(() => {
 
-        if (typeActivityUserContext.data && typeActivityUserContext.data.length > 0) {
+        if (typeActivityUserContext && typeActivityUserContext.length > 0) {
         
            
-          setData(typeActivityUserContext.data);
+          setData(typeActivityUserContext);
             
         }
 
@@ -26,7 +26,7 @@ const RadarChartComponent = () => {
 
     }, [typeActivityUserContext]);
 
-   // console.log("data RadarChart", data)
+    //console.log("data RadarChart", data)
 
     return (
         <div className='RadarChartComponent'>

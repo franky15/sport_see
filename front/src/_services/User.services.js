@@ -1,9 +1,15 @@
 import Axios from './Caller.services';
 
-const id = 12
+
+
+export const id = 12;
+
+
+
 //récupération de la liste de l'utilisateur
 let getUser = () =>{
 
+    
     return Axios.get("/user/" +id)  //routes du back
 }
 

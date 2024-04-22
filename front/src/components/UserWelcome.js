@@ -3,10 +3,12 @@ import React,{useState, useEffect} from "react";
 //importation du context
 import { useContextDatas } from '../_Utils/contexts/ContextDatas';
 
+
 const UserWelcome = () => {
 
     const { dataUserContext } = useContextDatas();
 
+    //console.log("dataUserContext", dataUserContext)
 
     const [user, setUser] = useState({});
 

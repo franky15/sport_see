@@ -222,4 +222,26 @@
   align-items: center;
 }
 
+.Error {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Error .Error404 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  color: #ff0302;
+}
+.Error .ErrorHome {
+  text-align: center;
+  font-weight: bold;
+}
+.Error .ErrorHome a {
+  color: black;
+}
+
 /*# sourceMappingURL=index.css.map */
